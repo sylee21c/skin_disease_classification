@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.ipynb_checkpoints/
+
+# 가상환경
+venv/
+env/
+ENV/
+isic/
+
+# 모델 가중치 (용량 큼!)
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.safetensors
+
+# 데이터셋 원본 (용량 큼!)
+data/
+dataset/
+data_raw/
+
+# 학습 중 생성되는 체크포인트
+runs/*/
+checkpoints/
+!runs/.gitkeep
+
+# 시스템 파일
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# 로그
+*.log
+logs/
+
+# 압축 파일
+*.tar.gz
+*.zip
+*.rar
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# ==============================================
+# 예외: 다음 파일들은 포함 (결과 이미지/CSV)
+# ==============================================
+
+# 결과 폴더의 모든 이미지와 CSV는 포함!
+!results/**/*.png
+!results/**/*.jpg
+!results/**/*.csv
+
+# 프로젝트 루트의 결과 이미지도 포함
+!roc_comparison_*.png
+!auc_comparison_*.png
+!*.csv
+!confusion_matrix.png
+
+# evaluation_results 폴더도 포함
+!evaluation_results/**/*.png
+!evaluation_results/**/*.csv
